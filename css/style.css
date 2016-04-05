@@ -266,3 +266,19 @@ ul {
   }
 
 }
+
+@media screen and (min-aspect-ratio: 16/9) {
+
+  .home-body {
+    background-size: auto 150%;
+  }
+
+}
+
+@media screen and (min-aspect-ratio: 12/5) {
+
+  .home-body {
+    background-size: auto 200%;
+  }
+
+}
