@@ -10,7 +10,7 @@ body.hidden-scroll {
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(218, 212, 208, 0.75);
+  background-color: rgba(218, 212, 208, 0.85);
   display: none;
   z-index: 1006;
 }
@@ -56,15 +56,17 @@ body.hidden-scroll {
 .sl-wrapper .sl-navigation button {
   position: fixed;
   top: 50%;
-  margin-top: -10px;
-  height: 60px;
+  margin-top: -40px;
+  height: 100px;
   width: 60px;
-  line-height: 30px;
+  line-height: 60px;
   text-align: center;
   display: block;
   z-index: 1015;
-  font-family: arial sans-serif;
-  font-size: 3em;
+  font-family: 'Oswald', sans-serif;
+  font-size: 4em;
+  font-weight: 300;
+  color: #222;
 }
 /* line 58, ../sass/simplelightbox.scss */
 .sl-wrapper .sl-navigation button.sl-next {
