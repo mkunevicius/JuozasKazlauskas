@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="animsition">
   <head>
     <meta charset="utf-8">
     <title>Kazlauskas Photography</title>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="lightbox/simplelightbox.css" rel="stylesheet">
+    <link href="lightbox/simplelightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animsition/animsition.min.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -120,15 +121,16 @@
       </div>
 
 
-
-
     <footer class="main-footer">
   		<span>&copy; 2016 Fotografo Juozo Kazlausko paramos ir labdaros fondas.</span>
   	</footer>
 
+
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="lightbox/simple-lightbox.js"></script>
+    <script src="lightbox/simple-lightbox.min.js"></script>
+    <script src="animsition/animsition.min.js"></script>
     <script type="text/javascript">
+      $('.animsition').animsition();
       var gallery = $('.gallery a').simpleLightbox();
     </script>
 
