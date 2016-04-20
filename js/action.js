@@ -1,7 +1,7 @@
 // Change home body background image every n seconds
 
 $(function() {
-  var body = $('body');
+  var body = $('.home-body');
   var backgrounds = new Array(
     'url("img/img_05.jpg")',
     'url("img/img_01.jpg")',

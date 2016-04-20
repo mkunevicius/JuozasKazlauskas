@@ -28,9 +28,11 @@ ul {
 
 .home-body {
   /* background image is set dynamically with jquery */
+  background: #555;
   background-position: center;
   background-size: auto 110%;
-  transition: background 0.5s linear;
+  -moz-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .about-body,
@@ -216,6 +218,10 @@ ul {
   .thumb img {
     height: 100%;
     width: auto;
+  }
+
+  .thumb img:hover {
+    box-shadow: 0 0 10px #555;
   }
 
   .galleryName {
