@@ -28,8 +28,6 @@ ul {
 
 .home-body {
   /* background image is set dynamically with jquery */
-  background: #555 url('../img/img_05.jpg')
-  background: none;
   background-position: center;
   background-size: auto 110%;
   transition: background 0.5s linear;
