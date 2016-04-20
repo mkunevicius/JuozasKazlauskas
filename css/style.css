@@ -40,6 +40,7 @@ ul {
 .contact-body {
   background: #555 url('../img/img_05.jpg') center;
   background-size: auto 110%;
+  background-attachment: fixed;
 }
 
 /* Header ---------------------------------*/
@@ -131,7 +132,7 @@ ul {
 .text {
   margin: 5%;
   color: #222;
-  background-color: rgba(218, 212, 208, 0.75);
+  background-color: rgba(218, 212, 208, 0.65);
   padding: 0 2em;
   text-align: justify;
   font-weight: 300;
@@ -252,6 +253,7 @@ ul {
   .sl-wrapper .sl-image .sl-caption {
     font-size: 0.75em;
   }
+
 }
 
 @media (min-width: 1100px) {
