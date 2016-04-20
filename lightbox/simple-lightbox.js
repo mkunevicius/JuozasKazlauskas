@@ -21,7 +21,7 @@ $.fn.simpleLightbox = function( options )
 		captionSelector:	'img',
 		captionType:		'attr',
 		captionsData:		'title',
-		captionPosition:	'bottom',
+		captionPosition:	'outside',
 		close:				true,
 		closeText:			'×',
 		showCounter:		true,
@@ -35,8 +35,8 @@ $.fn.simpleLightbox = function( options )
 	 	swipeTolerance: 	50,
 	 	className:			'simple-lightbox',
 	 	widthRatio: 		0.8,
-	 	heightRatio: 		0.9,
-	 	disableRightClick:	false,
+	 	heightRatio: 		0.8,
+	 	disableRightClick:	true,
 	 	disableScroll:		true,
 	 	alertError:			true,
 	 	alertErrorMessage:	'Image not found, next image will be loaded'
@@ -137,7 +137,7 @@ $.fn.simpleLightbox = function( options )
 			windowWidth	 = $( window ).width() * options.widthRatio,
 			windowHeight = $( window ).height() * options.heightRatio;
         	tmpImage.src	= curImg.attr( 'src' );
-			
+
 			$(tmpImage).bind('error',function(ev){
 			    //no image was found
 			    objects.eq(index).trigger($.Event('error.simplelightbox'))
@@ -146,7 +146,7 @@ $.fn.simpleLightbox = function( options )
 			    spinner.hide();
 			    if(options.alertError){
 			    	alert(options.alertErrorMessage);
-			    	
+
 			    	if(dir == 1 || dir == -1){
 				    	loadImage(dir);
 				    } else {
@@ -161,7 +161,7 @@ $.fn.simpleLightbox = function( options )
 					.trigger($.Event('changed.simplelightbox'))
 					.trigger($.Event( (dir===1?'nextDone':'prevDone')+'.simplelightbox'));
 				}
-        		
+
         		if(loaded.indexOf(curImg.attr( 'src' )) == -1){
         			loaded.push(curImg.attr( 'src' ));
         		}
@@ -259,7 +259,7 @@ $.fn.simpleLightbox = function( options )
 				swipeEnd	 = 0,
 				mousedown = false,
 				imageLeft = 0;
-		
+
 			image
 			.on( 'touchstart.'+prefix+' mousedown.'+prefix, function(e)
 			{
@@ -321,7 +321,7 @@ $.fn.simpleLightbox = function( options )
 			objects.eq(index)
 			.trigger($.Event('change.simplelightbox'))
 			.trigger($.Event( (dir===1?'next':'prev')+'.simplelightbox'));
-			
+
 		var newIndex = index + dir;
 			if(animating || (newIndex < 0 || newIndex >= objects.length) && options.loop == false ) return;
 			index = (newIndex < 0) ? objects.length -1: (newIndex > objects.length -1) ? 0 : newIndex;
@@ -331,7 +331,7 @@ $.fn.simpleLightbox = function( options )
 			  if( canTransisions ) slide(options.animationSpeed / 1000, ( -100 * dir ) - swipeDiff + 'px');
 			  else css.left = parseInt( $('.sl-image').css( 'left' ) ) + -100 * dir + 'px';
 			}
-			
+
 			$('.sl-image').animate( css, options.animationSpeed, function(){
 				setTimeout( function(){
 					// fadeout old image
@@ -390,7 +390,7 @@ $.fn.simpleLightbox = function( options )
 	// events
 	setup();
 
-	
+
 
 	// open lightbox
 	objects.on( 'click.'+prefix, function( e ){
