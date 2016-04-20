@@ -4,9 +4,9 @@ $(function() {
   var body = $('body');
   var backgrounds = new Array(
     'url("img/img_05.jpg")',
-    'url("img/IMG_5056.jpg")',
-    'url("img/IMG_5046.jpg")',
-    'url("img/IMG_5055.jpg")',
+    'url("img/img_01.jpg")',
+    'url("img/img_03.jpg")',
+    'url("img/img_04.jpg")',
     'url("img/img_02.jpg")'
   );
   var current = 0;
