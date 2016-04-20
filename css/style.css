@@ -108,9 +108,9 @@ ul {
 }
 
 .thumb {
-  -webkit-flex-basis: 44%;
-  flex-basis: 44%;
-  flex-grow: grow;
+  /*-webkit-flex-basis: 44%;
+  flex-basis: 44%;*/
+  flex-shrink: 1;
   background-color: rgba(226, 221, 218, 1);
   border: 10px solid rgba(226, 221, 218, 1);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -199,8 +199,8 @@ ul {
   }
 
   .thumb {
-    -webkit-flex-basis: 25%;
-    flex-basis: 15%;
+    /*-webkit-flex-basis: 25%;
+    flex-basis: 5%;*/
     height: 80px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3), 5px -5px 5px rgba(0, 0, 0, 0.3);
   }
@@ -271,8 +271,8 @@ ul {
   }
 
   .thumb {
-    -webkit-flex-basis: 15%;
-    flex-basis: 1%;
+    /*-webkit-flex-basis: 15%;
+    flex-basis: 1%;*/
     height: 86px;
   }
 
@@ -314,8 +314,8 @@ ul {
   }
 
   .thumb {
-    -webkit-flex-basis: 11%;
-    flex-basis: 1%;
+    /*-webkit-flex-basis: 11%;
+    flex-basis: 1%;*/
     height: 120px;
   }
 
