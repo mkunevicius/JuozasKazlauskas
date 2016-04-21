@@ -1,23 +1,17 @@
-// Change home body background image every n seconds
+// Change home background image every n seconds
 
-$(function() {
-  var body = $('.home-body');
-  var backgrounds = new Array(
-    'url("img/img_05.jpg")',
-    'url("img/img_01.jpg")',
-    'url("img/img_03.jpg")',
-    'url("img/img_04.jpg")',
-    'url("img/img_02.jpg")'
-  );
-  var current = 0;
+function cycleDivs(){
+    var $active = $('.home-body .active');
+    var $next = ($('.home-body .active').next().length > 0) ? $('.home-body .active').next() : $('.home-body div:first');
+      $next.css('z-index',2);//move the next div up the pile
+	  $active.fadeOut(1500,function(){//fade out the top div
+	  $active.css('z-index',1).show().removeClass('active');//reset the z-index and unhide the div
+      $next.css('z-index',3).addClass('active');//make the next div the top one
+      });
+    }
 
-  function nextBackground() {
-    body.css(
-      'background-image',
-      backgrounds[current = ++current % backgrounds.length]
-    );
-  setTimeout(nextBackground, 5000);
-  }
-  setTimeout(nextBackground, 3000);
-  body.css('background-image', backgrounds[0]);
-});
+    $(window).load(function(){
+		$('.home-body').fadeIn(1500);//fade the background back in once all the images are loaded
+		  // run every 5s
+		  setInterval('cycleDivs()', 5000);
+    })

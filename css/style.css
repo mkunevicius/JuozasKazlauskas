@@ -27,12 +27,30 @@ ul {
 /* Backgrounds ----------------------------*/
 
 .home-body {
-  /* background image is set dynamically with jquery */
-  background: #555;
-  background-position: center;
-  background-size: auto 110%;
-  -moz-transition: 1s ease;
-  transition: 1s ease;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-body div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: #555;
+  background-size: cover;
+  background-position: center center
+}
+
+.home-body div.active {
+  z-index: 3;
 }
 
 .about-body,
@@ -40,8 +58,6 @@ ul {
 .contact-body {
   background: #555 url('../img/img_05.jpg') center;
   background-size: auto 110%;
-  -webkit-background-attachment: fixed;
-  -moz-background-attachment: fixed;
   background-attachment: fixed;
 }
 
@@ -380,42 +396,6 @@ ul {
 
   .main-footer {
     font-size: 2em;
-  }
-
-}
-
-/* background optimization
-for widescreen and resized browser window --------------------*/
-
-@media screen and (min-aspect-ratio: 16/9) {
-
-  .home-body,
-  .about-body,
-  .photography-body,
-  .contact-body {
-    background-size: auto 115%;
-  }
-
-}
-
-@media screen and (min-aspect-ratio: 17/9) {
-
-  .home-body,
-  .about-body,
-  .photography-body,
-  .contact-body {
-    background-size: auto 150%;
-  }
-
-}
-
-@media screen and (min-aspect-ratio: 12/5) {
-
-  .home-body,
-  .about-body,
-  .photography-body,
-  .contact-body {
-    background-size: auto 200%;
   }
 
 }
