@@ -293,7 +293,7 @@ ul {
   .name a,
   .main-nav a {
     padding: 25px 25px;
-    font-size: 1.1em;
+    font-size: 1.15em;
   }
 
   #wrapper {
@@ -321,7 +321,7 @@ ul {
   }
 
   .thumb {
-    height: 92px;
+    height: 94px;
   }
 
   .galleryName {
