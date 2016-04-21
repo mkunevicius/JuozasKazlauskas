@@ -293,6 +293,7 @@ ul {
   .name a,
   .main-nav a {
     padding: 25px 25px;
+    font-size: 1.1em;
   }
 
   #wrapper {
@@ -320,7 +321,7 @@ ul {
   }
 
   .thumb {
-    height: 86px;
+    height: 92px;
   }
 
   .galleryName {
@@ -334,7 +335,7 @@ ul {
 
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1900px) {
 
   .text {
     max-width: 720px;
