@@ -57,7 +57,8 @@ ul {
 .photography-body,
 .contact-body {
   background: #555 url('../img/img_05.jpg') center;
-  background-size: auto 110%;
+  background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
 }
 
