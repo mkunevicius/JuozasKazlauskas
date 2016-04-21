@@ -131,7 +131,7 @@ ul {
 .thumb {
   flex-shrink: 1;
   background-color: rgba(226, 221, 218, 1);
-  border: 10px solid rgba(226, 221, 218, 1);
+  border: 7px solid rgba(226, 221, 218, 1);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -144,6 +144,11 @@ ul {
   width: 80%;
   font-weight: 300;
 }
+
+/*.galleryName:nth-child(1) {
+  margin-top: 3%;
+}*/
+
 
 
 /* ABOUT, CONTACT---------------------------*/
@@ -329,7 +334,7 @@ ul {
 
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1600px) {
 
   .text {
     max-width: 720px;
@@ -355,7 +360,7 @@ ul {
   }
 
   .thumb {
-    height: 120px;
+    height: 116px;
   }
 
   .container {
