@@ -298,11 +298,11 @@ ul {
     display: -webkit-flex;
     display: flex;
     flex-direction: row;
+    -webkit-justify-content: center;
     justify-content: center;
   }
 
   .text {
-    flex-grow: grow;
     max-width: 500px;
     margin-top: 60px;
   }
