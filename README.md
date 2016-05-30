@@ -9,5 +9,5 @@ Dynamically changing homepage background with custom jQuery.
 
 'Animsition' jQuery plugin used to navigate smoothly inside.
 
-Restricted posibilities to copy/save images from the gallery.
+Restricted possibilities to copy/save images from the gallery.
 
